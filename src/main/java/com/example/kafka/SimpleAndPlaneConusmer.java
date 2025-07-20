@@ -28,7 +28,7 @@ public class SimpleAndPlaneConusmer {
 
         // Step 4: Poll loop
         try {
-            System.out.println("Starting Kafka consumer...");
+            System.out.println("Starting Kafka consumer...Testing");
             while (true) {
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
                 for (ConsumerRecord<String, String> record : records) {
